@@ -1,0 +1,432 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nursing Assistant">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Nursing Assistant</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="dento-load"></div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Top Content -->
+                    <div class="col-6 col-md-9 col-lg-8">
+                        <div class="top-header-content">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Anytime Anywhere"><i
+                                    class="fa fa-map-marker"></i> <span>Anytime Anywhere</span></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="dolo2846@gmail.com"><i
+                                    class="fa fa-envelope"></i> <span>dolo2846@gmail.com</span></a>
+                        </div>
+                    </div>
+                    <!-- Top Header Social Info -->
+                    <div class="col-6 col-md-3 col-lg-4">
+                        <div class="top-header-social-info text-right">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i
+                                    class="fa fa-google-plus"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i
+                                    class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="{% url 'home' %}"><img
+                                src="{% static 'website/img/core-img/logo1.png' %}" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="service.html">Service</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Booking Now Button -->
+                        <a href="{% url 'home' %}#appointments" class="btn dento-btn booking-btn">Book Now</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Breadcrumb Area Start ***** -->
+    <div class="breadcumb-area bg-img bg-gradient-overlay"
+        style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <h2 class="title">Our Products</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcumb--con">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Our Pricing</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Breadcrumb Area End ***** -->
+
+    <!-- Dolo Pricing Table Area Start -->
+    <section id='pricing' class="dento-pricing-table-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Products</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="dento-price-table table-responsive">
+                        <table class="table table-borderless mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Medicine Names</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Dolo650</th>
+                                    <td>1 strip</td>
+                                    <td>Rs.10</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">paracetamol</th>
+                                    <td>1 strip</td>
+                                    <td>Rs.20</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">crocin</th>
+                                    <td>1 strip</td>
+                                    <td>Rs.30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">systine ultra</th>
+                                    <td>5 ML</td>
+                                    <td>Rs.99</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Novaritis</th>
+                                    <td>5 ML</td>
+                                    <td>RS.200</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cilacar</th>
+                                    <td>1 strip</td>
+                                    <td>Rs.350</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">state pure gold</th>
+                                    <td>1 strip </td>
+                                    <td>Rs.250</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="more-btn text-center mt-50">
+                        <a href="{% url 'pricing' %}" class="btn dento-btn">Other Services <i
+                                class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dolo Pricing Table Area End -->
+
+    <!-- Book An Appointment Area Start -->
+    <section id='order'
+        class="book-an-oppointment-area section-padding-100 bg-img bg-gradient-overlay jarallax clearfix"
+        style="background-image: url('{% static 'website/img/bg-img/12.jpg' %}');">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center white">
+                        <h2 id="appointment">Place your Order</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <!-- Appointment Form -->
+                    <div class="appointment-form">
+                        <form action="{% url 'order' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="your-name" class="form-control" placeholder="Your Name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="tel" name="your-phone" class="form-control"
+                                            placeholder="Your Phone xxxxxxxxxx" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="email" name="your-email" class="form-control"
+                                            placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <input type="text" name="your-address" class="form-control"
+                                            placeholder="Your Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <select name="your-day" class="form-control">
+                                            <option value="Choose Your Day">Choose Your Medicines</option>
+                                            <option value="Monday">Dolo650</option>
+                                            <option value="Tuesday">paracetamol</option>
+                                            <option value="Wednesday">crocin</option>
+                                            <option value="Thursday">Cilacar</option>
+                                            <option value="Friday">State pure gold</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-30">
+                                        <select name="your-time" class="form-control">
+                                            <option value="Choose Your Time">Choose Quantity</option>
+                                            <option value="9 AM to 10 AM">1</option>
+                                            <option value="11 AM to 12 PM">2</option>
+                                            <option value="2 PM to 4 PM">3</option>
+                                            <option value="8 PM to 10 PM">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <button type="button" disabled class="btn dento-btn">order Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book An Oppointment Area End -->
+    <!-- ***** Breadcrumb Area End ***** -->
+    {% if your_name %}
+    <center>
+        <h3>Thanks, {{your_name}}!</h3>
+        <br />
+        We received your order and will reach you soon
+    </center>
+    <br />
+    <center>
+        <p><strong>Name: </strong>{{your_name}}</p>
+    </center>
+    <center>
+        <p><strong>Phone: </strong>{{your_phone}}</p>
+    </center>
+    <center>
+        <p><strong>Email: </strong>{{your_email}}</p>
+    </center>
+    <center>
+        <p><strong>Address: </strong>{{your_address}}</p>
+    </center>
+    <center>
+        <p><strong>Medicines: </strong>{{your_medicines}}</p>
+    </center>
+    <center>
+        <p><strong>Amount: </strong>{{your_count}}</p>
+    </center>
+    {% endif %}
+
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area bg-img bg-gradient-overlay"
+        style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget">
+                        <a href="./index.html" class="d-block mb-4"><img
+                                src="{% static 'website/img/core-img/logo1.png' %}" alt=""></a>
+                        <p>thanksss</p>
+                        <div class="footer-contact">
+                            <p><i class="icon_pin"></i>Anytime Anywhere</p>
+                            <p><i class="icon_phone"></i> 9344031768</p>
+                            <p><i class="icon_mail"></i> Dolo2846@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="single-footer-widget">
+                        <!-- Widget Title -->
+                        <h5 class="widget-title">Quick Link</h5>
+
+                        <!-- Quick Links Nav -->
+                        <nav>
+                            <ul class="quick-links">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Advisors</a></li>
+                                <li><a href="#">Services</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="single-footer-widget">
+                        <!-- Widget Title -->
+                        <h5 class="widget-title">Offers</h5>
+
+                        <p>We will send out weekly newest article and some great offers</p>
+
+
+                        <!-- Social Info -->
+                        <div class="footer-social-info">
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i
+                                    class="fa fa-google-plus"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i
+                                    class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-content">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            website is made
+                            with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Data Scientists</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- ******* All JS ******* -->
+    <!-- jQuery js -->
+    <script src="{% static 'website/js/jquery.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'website/js/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <!-- All js -->
+    <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
