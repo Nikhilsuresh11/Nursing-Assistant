@@ -64,9 +64,6 @@ Steps to contribute:
 Nikhil R  – nikhilram1010@gmail.com
  
  You can find me here at:
-[Github](https://github.com/nikhilram1010)
 [LinkedIn](https://www.linkedin.com/in/nikhil11r/)
 
 
-## License
-© Nikhil
