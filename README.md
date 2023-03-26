@@ -61,7 +61,7 @@ Steps to contribute:
 
 
 
-![image](https://user-images.githubusercontent.com/109418285/227779437-b1ff9ada-a103-4c1d-9001-e09fe44239e0.png)
+![image](https://user-images.githubusercontent.com/109418285/227780284-70a7b79a-3867-48a3-ab3f-cd40fa9d3822.png)
 ![image](https://user-images.githubusercontent.com/109418285/227780140-9b904453-cca3-4f56-a3d8-29c80ffeb3b5.png)
 ![image](https://user-images.githubusercontent.com/109418285/227780167-5e4638b4-d130-48dc-963c-414b76649f14.png)
 
